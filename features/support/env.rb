@@ -3,6 +3,7 @@ require "capybara/cucumber"
 require "selenium-webdriver"
 require "site_prism"
 require "logger"
+require "httparty"
 require_relative "helpers"
 require_relative "page_helper.rb"
 
