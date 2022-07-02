@@ -4,7 +4,9 @@ module Helpers
         file[codigo]
     end
 
+    #gerar CPF para o cadastro de usuario
     def gerar_cpf
+      begin
         data = { 
             acao: "gerar_cpf", 
             pontuacao: "N", 
@@ -19,7 +21,11 @@ module Helpers
               'Content-Type' => 'application/x-www-form-urlencoded' 
             }
           )
-          
+
+          LOGGER.info("CPF gerado: #{JSON.parse(response.body)}")
           response_body = JSON.parse(response.body)
+        rescue RuntimeError
+          LOGGER.error("Erro ao gerar um CPF pelo site da 4devs.")
+        end
     end
 end

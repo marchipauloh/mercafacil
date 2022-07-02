@@ -7,7 +7,9 @@ Funcionalidade: Cadastro de novo usuario
     Dado que eu esteja na tela inicial
     E que tenha fechado o aviso dos cookies
 
-  Cenario: Cadastrar novo usuario
-    Dado que inicia o CPF
+  Cenario: Acessar tela de cadastro do novo usuario
+    Dado que insire o cpf
     Quando clicar no botão continar
     Então devo ser redirecionado para tela de cadastro
+
+  Cenario: Cadastar novo usuario
