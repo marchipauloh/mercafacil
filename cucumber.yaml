@@ -1,8 +1,6 @@
 ---
   default: -p dev -p chrome -p html -p pretty
-  ci: -p dev -p chrome -p json -p progress
   dev: ENV_TYPE=dev
-  hmg: ENV_TYPE=hmg
   firefox: BROWSER=firefox
   chrome: BROWSER=chrome
   headless: BROWSER=headless

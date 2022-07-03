@@ -1,0 +1,12 @@
+
+dados_usuario:
+  nome: "Teste de nome"
+  cel: "19991139758"
+  genero: "Feminino"
+  email: "mercafacil"
+  dt_nasc: "19091999"
+  cep: "13920000"
+  bairro: "Bairro teste"
+  rua: "Rua teste"
+  num: "999"
+  senha: "123456"

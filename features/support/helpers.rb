@@ -22,8 +22,8 @@ module Helpers
             }
           )
 
-          LOGGER.info("CPF gerado: #{JSON.parse(response.body)}")
-          response_body = JSON.parse(response.body)
+          LOGGER.info("CPF gerado: #{response}")
+          response_body = response
         rescue RuntimeError
           LOGGER.error("Erro ao gerar um CPF pelo site da 4devs.")
         end
